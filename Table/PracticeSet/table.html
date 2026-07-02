@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,
+      th {
+        border: 1px solid;
+        padding: 5px;
+        
+      }
+      thead{
+        background-color: rgba(142, 142, 140);
+      }
+      
+      table{
+        border-collapse: collapse;
+
+      }
+      tfoot{
+        background-color: rgb(211, 207, 204);
+      }
+     
+      
+      
+    </style>
+  </head>
+  <body>
+    <table>
+        <!-- colgroup is used to apply style on column -->
+        <colgroup>
+            <col style="background-color: beige;">
+            <col style="background-color: azure;">
+            <col style="background-color: aliceblue;">
+            <col style="background-color: rgb(159, 221, 163);">
+        </colgroup>
+        <!-- Table Caption -->
+      <caption>
+        This table having employee salary data
+      </caption>
+      <!-- Table Head -->
+      <thead>
+        <tr>
+          <th>EmpCode</th>
+          <th>Emp Name</th>
+          <th>Job Title</th>
+          <th>Salary (LPA)</th>
+        </tr>
+      </thead>
+      <!-- Table Body -->
+      <tbody align="center">
+        <tr>
+          <td>911</td>
+          <td>Meet Parmar</td>
+          <td>Developer</td>
+          <td>5.6</td>
+        </tr>
+        <tr>
+          <td>912</td>
+          <td>John Deo</td>
+          <td>Designer</td>
+          <td rowspan="2">3.6</td>
+        </tr>
+        <tr>
+          <td>913</td>
+          <td>Alice Reo</td>
+          <td>Project Head</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>914</td>
+          <td>Georgie Ryan</td>
+          <td>Tester</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+      <!-- Table Footer -->
+      <tfoot>
+        <tr align="center">
+            <!-- colspan for spanning particular row through number of column -->
+          <td colspan="4">This is table footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

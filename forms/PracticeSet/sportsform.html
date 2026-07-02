@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sports Physical Form</h2>
+
+    <form action="/forms/PracticeSet/actionpage.html" method="get">
+        <fieldset>
+            <legend><h4>Athlete Information</h4></legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="schoolsports">School Team:</label>
+                    <input type="text" name="schoolteam" id="schoolteam">
+                </li>
+                <li>
+                    <label for="sports">Sports:</label>
+                    <input type="text" name="sports" id="sports">
+                </li>
+                <li>
+                    <label for="parentgaurdieanname">Parent/Guardian Name:</label>
+                    <input type="text" name="parentgaurdieanname" id="parentgaurdieanname">
+                </li>
+                <li>
+                    <label for="contactnumber">Contact Number:</label>
+                    <input type="tel" name="contactnumber" id="contactnumber">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><h4>Medical History of Athlete</h4></legend>
+            <ul>
+                <li>
+                    <label for="history_concussions">History of Concussions: </label>
+                    <input type="radio" name="history_concussions" id="history_concussions_yes" value="history_concussions_yes">
+                    <label for="history_concussions_yes">Yes </label>
+                    <input type="radio" name="history_concussions" id="history_concussions_no" value="history_concussions_no">
+                    <label for="history_concussions_no">No</label>
+                </li>
+                <li>
+                    <label for="previous_surgeries">Previous Surgeries: </label>
+                    <input type="text" name="previous_surgeries" id="previous_surgeries" value="Bone Factures" readonly>
+                </li>
+
+                <li>
+                    <label for="AnyBoneFractures">Any bone fractures? </label>
+                    <input type="radio" name="AnyBoneFractures" id="AnyBoneFractures_yes" value="AnyBoneFractures_yes">
+                    <label for="AnyBoneFractures_yes">Yes</label>
+                    <input type="radio" name="AnyBoneFractures" id="AnyBoneFractures_no" value="AnyBoneFractures_no">
+                    <label for="AnyBoneFractures_no">NO</label>
+                </li>
+                <li>
+                    <label for="Asthmaorbreathing_p">Asthma or breathing problems: </label>
+                    <input type="radio" name="Asthmaorbreathing_p" id="Asthmaorbreathing_yes" value="Asthmaorbreathing_p_yes">
+                    <label for="AnyBoneFractures_yes">Yes</label>
+                    <input type="radio" name="Asthmaorbreathing_p" id="Asthmaorbreathing_no" value="Asthmaorbreathing_no">
+                    <label for="AnyBoneFractures_no">NO</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Select Department</legend>
+            <select name="department" id="dep">
+            <option  value="cse" >CSE</option>
+            <option value="it">IT</option>t
+            <option value="AILML">AILML</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>TextArea</legend>
+            <label for="adr">Address:</label>
+            <textarea name="Address" id="adr"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="profile_img">Profile: </label>
+            <input type="file" name="profile_img" id="profile_img" accept=".jpg, .png">
+            <label for="resume_can">Resume: </label>
+            <input type="file" name="resume_can" id="resume_can" accept=".docx, .pdf">
+            <label for="word_file">Word File: </label>
+            <input type="file" name="word_file" id="word_file" accept=".docx">
+            <label for="excel_file">Excel File: </label>
+            <input type="file" name="excel_file" id="excel_file" accept=".xlxs">
+        </fieldset>
+        <fieldset>
+            <legend><h4>Doctor's Recommendiation for sports Parition</h4></legend>
+        </fieldset>
+        <button type="submit">Form Submit</button>
+    </form>
+</body>
+</html>
