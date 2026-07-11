@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+    <link rel="stylesheet" href="practical3.css">
+    <title>Document</title>
 </head>
 <body>
     
-    <header>
-        <nav>
-            <h1> About Me</h1>
-            <div class="profile-pic">
-                <img src="" alt="profile image">
-            </div>
-        </nav>
-    </header>
+
 
     <main>
 
-        <div class="container">
+           <h1 id="about">
+                About me
+            </h1>
 
-            <p class="head">I'm a developer</p>
+            <div class="profile">
+                <img src="https://img.magnific.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80" alt="" height="200px" width="200px">
+                <p>I am developer and educator</p>
 
-            <div class="text">
-                 <p>I am a passionate professional dedicated to building impactful web applications and sharing my knowledge with students around the world. Over the past few years, I have focused heavily on mastering modern technologies to solve complex, real-world problems.
-</p>
-
-<p>In my work, I always emphasize writing clean, maintainable code and focusing on user-centric design. Learning is a lifelong journey, and I make it a priority to stay updated with the latest industry standards and engineering best practices.
-</p>
             </div>
 
-            <div class="skill">
-                <p>my core skill</p>
-                <ul>
-                    <li>Frontend: Designing interactive user interfaces using modern structured components.</li>
-                    <li>Backend: Creating reliable, secure, and highly scalable server architectures.</li>
-                    <li>Mentorship: Helping aspiring engineers transition into technical roles through hands-on practice.</li>
-                </ul>
+            <div class="about-us">
+
+                <p>I am a passionate professional dedicated to building impactful web applications and sharing my knowledge with students around the world. Over the past few years, I have focused heavily on mastering modern technologies to solve complex, real-world problems.</p>
+                <p>In my work, I always emphasize writing clean, maintainable code and focusing on <span>user-centric design.</span>Learning is a lifelong journey, and I make it a priority to stay updated with the latest industry standards and engineering best practices. </p>
             </div>
-        </div>
+
+            <h3>my core skill and focus area</h3>
+            <ul class="skill">
+
+                <li>Frontend: Designing interactive user interfaces using modern structured components.</li>
+                <hr>
+                <ol>
+                    <li>HTml: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate a cumque officia ad ea porro nulla, nemo recusandae </li>
+                    <hr>
+                    <li>HTml: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate a cumque officia ad ea porro nulla, nemo recusandae </li>
+                    <hr>
+                    <li>HTml: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate a cumque officia ad ea porro nulla, nemo recusandae </li>
+                    <hr>
+                </ol>
+                <hr>
+                
+                <li>Backend: Creating reliable, secure, and highly scalable server architectures.</li>
+                
+                <li>Mentorship: Helping aspiring engineers transition into technical roles through hands-on practice.</li>
+                
+           </ul>
+
+
+           <div class="footer">
+            <h3>Lets connect</h3>
+            <p>You can explore my open-source projects directly on my <a href="#">GitHub Profile</a>, or reach out to me via <a href="#">hello@example.com</a>fo</p>
+           </div>
+
+
     </main>
 </body>
 </html>
@@ -46,113 +63,17 @@
 
 
 
-\
-\
-<script>
-    ```javascript
-class Stack {
-    constructor(size) {
-        this.size = size;                 // Maximum capacity of the stack
-        this.stack = new Array(size);     // Array to store elements
-        this.top = -1;                    // Indicates an empty stack
-    }
+JavaScript Source Code
+        ↓
+      Parser
+        ↓
+        AST
+        ↓
+    Ignition
+        ↓
+     Bytecode
+        ↓
+TurboFan (Hot Code)
+        ↓
+   Machine Code
 
-    // Check if the stack is empty
-    isEmpty() {
-        return this.top === -1;
-    }
-
-    // Check if the stack is full
-    isFull() {
-        return this.top === this.size - 1;
-    }
-
-    // Insert an element onto the stack
-    push(value) {
-        if (this.isFull()) {
-            console.log("Stack Overflow");
-            return;
-        }
-
-        this.top++;
-        this.stack[this.top] = value;
-    }
-
-    // Remove and return the top element
-    pop() {
-        if (this.isEmpty()) {
-            console.log("Stack Underflow");
-            return null;
-        }
-
-        const removedElement = this.stack[this.top];
-        this.top--;
-
-        return removedElement;
-    }
-
-    // Return the top element without removing it
-    peek() {
-        if (this.isEmpty()) {
-            console.log("Stack is Empty");
-            return null;
-        }
-
-        return this.stack[this.top];
-    }
-
-    // Display all elements from top to bottom
-    display() {
-        if (this.isEmpty()) {
-            console.log("Stack is Empty");
-            return;
-        }
-
-        console.log("Stack (Top → Bottom):");
-
-        for (let i = this.top; i >= 0; i--) {
-            console.log(this.stack[i]);
-        }
-    }
-
-    // Return the number of elements in the stack
-    sizeOfStack() {
-        return this.top + 1;
-    }
-}
-
-
-// -------------------- Usage --------------------
-
-const stack = new Stack(5);
-
-stack.push(10);
-stack.push(20);
-stack.push(30);
-
-stack.display();
-// 30
-// 20
-// 10
-
-console.log("Top Element:", stack.peek());
-// 30
-
-console.log("Removed:", stack.pop());
-// 30
-
-stack.display();
-// 20
-// 10
-
-console.log("Current Size:", stack.sizeOfStack());
-// 2
-
-console.log("Is Empty:", stack.isEmpty());
-// false
-
-console.log("Is Full:", stack.isFull());
-// false
-```
-
-</script>
