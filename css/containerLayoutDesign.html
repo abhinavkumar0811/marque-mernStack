@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container layout design like flipkart || Amazon</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .container {
+            border: 1px solid #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .item-container {
+            flex: 1 1 280px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-container img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .data {
+            padding-top: 16px;
+        }
+
+        .product {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .data p:last-child {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .why-choose-us {
+            border: 1px solid #ccc;
+            max-width: 1100px;
+            margin: 40px auto 0;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            color: #3b4a6b;
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .why-choose-us hr {
+            width: 50px;
+            height: 3px;
+            border: none;
+            background-color: #e85d4c;
+            margin: 0 auto 40px;
+        }
+
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1 1 200px;
+            padding: 0 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-icon {
+            font-size: 2.2rem;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        .stat-prefix {
+            color: #e85d4c;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .stat-number {
+            color: #e85d4c;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+
+        .stat-desc {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                padding: 24px 0;
+            }
+
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+
+            <div class="item-container">
+                <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=500&auto=format&fit=crop" alt="Kitchen remodel">
+                <article class="data">
+                    <p class="product">Kitchen Remodels</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+
+            <div class="item-container">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop" alt="Windows and doors">
+                <article class="data">
+                    <p class="product">Windows &amp; Doors</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+
+            <div class="item-container">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=500&auto=format&fit=crop" alt="Deck and porch">
+                <article class="data">
+                    <p class="product">Decks &amp; Porches</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <section class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <hr>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <p class="stat-prefix">We have</p>
+                    <p class="stat-number">2</p>
+                    <p class="stat-desc">Central locations in London and Dublin</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-comments"></i></div>
+                    <p class="stat-prefix">Over</p>
+                    <p class="stat-number">95%</p>
+                    <p class="stat-desc">Of students would recommend us to a friend</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <p class="stat-prefix">We are</p>
+                    <p class="stat-number">100%</p>
+                    <p class="stat-desc">Accredited by the British Council and ACELS</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                    <p class="stat-prefix">We have a</p>
+                    <p class="stat-number">95%</p>
+                    <p class="stat-desc">Exam Pass Rate for our students</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
