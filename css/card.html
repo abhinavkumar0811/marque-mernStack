@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .testimonials {
+            background-color: #eef3f8;
+            padding: 60px 0 80px;
+        }
+
+        .testimonials-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .testimonials-header h1 {
+            color: #1a3a5c;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .head-content {
+            color: #888;
+            font-size: 0.95rem;
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 24px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background: #c5d0dc;
+            border-radius: 4px;
+        }
+
+        .container-item {
+            position: relative;
+            flex: 0 0 320px;
+            scroll-snap-align: start;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 36px 28px 32px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .quote-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 64px;
+            height: 64px;
+            background: #1a3a5c;
+            border-bottom-left-radius: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 12px 14px 0 0;
+        }
+
+        .quote-badge i {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .name {
+            color: #1a3a5c;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .about {
+            color: #e85d4c;
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+        }
+
+        .rating {
+            color: #f5a623;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .contect-text {
+            color: #666;
+            font-size: 0.88rem;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        /* Fixed floating widgets */
+        .fixed-fig {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        #img-1,
+        #img-2,
+        .chat-widget {
+            pointer-events: auto;
+        }
+
+        #img-1 {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            width: 56px;
+            height: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #img-1:hover {
+            transform: scale(1.08);
+        }
+
+        #img-1 i {
+            color: #fff;
+            font-size: 1.6rem;
+        }
+
+        .chat-widget {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        .chat-close {
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 2px 6px;
+            line-height: 1;
+        }
+
+        .chat-close:hover {
+            color: #666;
+        }
+
+        .chat-label {
+            color: #5ba4c9;
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-style: italic;
+            transform: rotate(-8deg);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 8px;
+        }
+
+        .chat-label span {
+            font-size: 1.2rem;
+        }
+
+        #img-2 {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            background: #1a3a5c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #img-2:hover {
+            transform: scale(1.08);
+        }
+
+        #img-2 i {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+
+        .chat-badge {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 20px;
+            height: 20px;
+            background: #e53935;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+        }
+
+        .chat-widget.hidden {
+            display: none;
+        }
+
+     
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="testimonials">
+            <div class="testimonials-inner">
+                <header class="testimonials-header">
+                    <h1>What Our Clients Say</h1>
+                    <p class="head-content">Read what our satisfied clients have to say about working with QASSERT</p>
+                </header>
+
+                <div class="container">
+
+                    <article class="container-item">
+                        <div class="quote-badge"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="name">John Miller</p>
+                        <p class="about">Software Architect</p>
+                        <p class="rating">★★★★★</p>
+                        <p class="contect-text">
+                            QAssert provided exceptional software testing support, ensuring our product was released bug-free and on schedule. Their attention to detail and professional approach made them a great partner.
+                        </p>
+                    </article>
+
+                    <article class="container-item">
+                        <div class="quote-badge"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="name">Samantha Turner</p>
+                        <p class="about">Product Manager</p>
+                        <p class="rating">★★★★★</p>
+                        <p class="contect-text">
+                            "Working with QAssert was a great experience. Their team quickly identified critical issues, suggested improvements, and ensured our product met the highest quality standards. Highly recommended!"
+                        </p>
+                    </article>
+
+                    <article class="container-item">
+                        <div class="quote-badge"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="name">Michael Johnson</p>
+                        <p class="about">Tech Lead</p>
+                        <p class="rating">★★★★★</p>
+                        <p class="contect-text">
+                            QAssert's thorough testing saved us time and resources. Their test reports were comprehensive and actionable, helping us maintain product quality. Looking forward to more collaborations!
+                        </p>
+                    </article>
+
+                    <article class="container-item">
+                        <div class="quote-badge"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="name">Emily Davis</p>
+                        <p class="about">QA Director</p>
+                        <p class="rating">★★★★★</p>
+                        <p class="contect-text">
+                            The QAssert team delivered consistent, high-quality results across every sprint. Their communication was clear and their testing coverage gave us real confidence before each release.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <figure class="fixed-fig">
+            <a id="img-1" href="https://wa.me/" target="_blank" aria-label="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <div class="chat-widget" id="chatWidget">
+                <button class="chat-close" id="chatClose" aria-label="Close chat prompt">&times;</button>
+                <p class="chat-label"><span>👋</span> We Are Here!</p>
+                <div id="img-2" aria-label="Open chat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span class="chat-badge">1</span>
+                </div>
+            </div>
+        </figure>
+    </main>
+
+  
+
+</body>
+</html>
