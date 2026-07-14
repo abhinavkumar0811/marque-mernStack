@@ -249,7 +249,72 @@
             display: none;
         }
 
-     
+        /* section 2 - our services */
+        .second-layout {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .header-tag {
+            text-align: center;
+            color: #1a3a5c;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+        }
+
+        .service-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px 20px;
+        }
+
+        .items {
+            width: 31%;
+            display: flex;
+            gap: 14px;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon i {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .red-icon {
+            background-color: #e85d4c;
+            border: none;
+        }
+
+        .red-icon i {
+            color: #fff;
+        }
+
+        .service-detail h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .service-detail p {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .red-title {
+            color: #e85d4c;
+        }
+
     </style>
 </head>
 <body>
@@ -322,9 +387,126 @@
                 </div>
             </div>
         </figure>
+
+
+
+
+
+        <!-- project 2 in the same page -->
+
+        <section class="second-layout">
+
+            <header>
+                <h1 class="header-tag">Our Services</h1>
+            </header>
+
+            <div class="service-box">
+
+                <div class="items">
+                    <div class="icon red-icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3 class="red-title">Manual Testing</h3>
+                        <p>Comprehensive manual testing to ensure your software functions as intended.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Automated Testing</h3>
+                        <p>Efficient and reliable automated testing solutions to save time and resources.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>API Testing</h3>
+                        <p>We help you deliver seamless and high-quality digital experiences by thoroughly evaluating your APIs.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Mobile Testing</h3>
+                        <p>QA ASSERT's mobile testing ensures seamless, reliable user experiences across devices.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Security Testing</h3>
+                        <p>Identifying vulnerabilities to protect your software from potential threats.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Usability Testing</h3>
+                        <p>Ensuring your software meets user requirements and expectations.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Performance Testing</h3>
+                        <p>Evaluating software performance under different conditions to ensure stability and scalability.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-wheelchair"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Accessibility Testing</h3>
+                        <p>Making sure your software is accessible to all users, including those with disabilities.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Visual Testing</h3>
+                        <p>Verifying the visual correctness of your software across different interfaces.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-mobile"></i>
+                    </div>
+                    <div class="service-detail">
+                        <h3>Compatibility Testing</h3>
+                        <p>Ensuring your software works seamlessly across various devices.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
-  
-
+    
 </body>
 </html>
