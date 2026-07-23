@@ -17,18 +17,24 @@
 }
 
 body {
-  margin: 0 10rem;
-  max-width: 1400px;
+  margin: 0;
+  padding: 0 20px 40px;
   font-family: var(--font);
+  color: var(--text-dark);
+  background: linear-gradient(180deg, #f8faff 0%, #eef4ff 100%);
 }
 
 header {
-  width: 100%;
-  max-width: 1400px;
-  margin: 20px;
-  margin-bottom: 0px;
-  padding: 0px 24px;
-  background: #fff;
+  width: min(1400px, 100%);
+  margin: 0 auto 20px;
+  padding: 16px 24px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 8px 24px rgba(40, 116, 240, 0.08);
+  border-radius: 0 0 24px 24px;
 }
 
 .header-top {
@@ -184,14 +190,13 @@ header {
 
 
 .main-content {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0px;
-  padding: 0px 24px;
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
-} 
+}
 
 .main-offer {
   display: flex;
@@ -296,6 +301,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  overflow-x: scroll;
 }
 
 .rec-carousel-track {
@@ -411,7 +417,7 @@ header {
   padding: 40px 0 0 0;
   font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
-  width: 100%;
+  width: 100vw;
 }
 
 .site-footer-top {

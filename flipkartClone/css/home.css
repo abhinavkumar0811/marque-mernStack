@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+:root {
+  --primary-color: #2874f0;
+  --text-color: #212121;
+  --bg-color: #f1f3f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Add your Flipkart clone styles here */
+
+
+
+
