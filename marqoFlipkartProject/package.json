@@ -1,0 +1,12 @@
+{
+  "name": "marqo-flipkart-project",
+  "version": "1.0.0",
+  "description": "Static HTML/CSS project with live reloading dev server",
+  "main": "clone.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html, *.css\" --startPath clone.html"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
