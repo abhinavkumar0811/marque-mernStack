@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
+}
+
+body {
+  background-color: #fcfbfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 28px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+.card-customization {
+  background-color: #d7c5f3;
+  grid-row: span 2;
+  justify-content: space-between;
+}
+
+.card-scheduling {
+  background-color: #f7a8b8;
+  grid-column: span 2;
+}
+
+.card-wallet {
+  background-color: #c7e5a8;
+}
+
+.card-inbox {
+  background-color: #fce38a;
+}
+
+.card-gifts {
+  background-color: #f8b179;
+  grid-column: span 2;
+  height: 270px;
+  overflow: hidden;
+}
+
+.card-reminders {
+  background-color: #bce0ed;
+}
+
+.notebook {
+  position: relative;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 433px;
+  height: 383px;
+}
+
+.float {
+  border-radius: 5px;
+  position: absolute;
+  height: 60px;
+  width: auto;
+  bottom: 115px;
+  left: -30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brands {
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+}
+
+.scheduling {
+  width: 400px;
+}
