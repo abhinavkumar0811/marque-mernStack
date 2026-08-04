@@ -6,7 +6,63 @@
         <title>project 1</title>
 
         <style>
-            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: rgb(230, 230, 235);
+            }
+            .portfolio-container{
+                margin: 40px auto;
+                width: 500px;
+                height: auto;
+                border: 2px solid black;
+                background-color: white;
+                border-radius: 20px;
+                overflow: hidden;
+                padding: 10px;
+                position: relative;
+
+            }
+             .badge{
+                position: absolute;
+                font-size: 50px;
+                top: 10px;
+                background-color: white;
+                right: 10px;
+                border-radius: 100%;
+                z-index: 100;
+                padding: 10px;
+
+            }
+            .container-img{
+                width: 100%;
+                height: auto;
+
+
+            }
+            .background-img img{
+                width: 100%;
+                border-radius: 20px;
+            }
+            .profile-img{
+                position: relative;
+                background-color: red;
+                border-radius: 100%;
+                overflow: hidden;
+
+            }
+           .profile-img img{ 
+               width: 140px;
+           }
+            .personal-info{
+
+            }
+            .card-footer{
+
+            }
          
         </style>
     </head>
@@ -17,15 +73,18 @@
 
         <article class="portfolio-container">
 
-            <div class="contianer-img">
+            <div class="container-img">
 
+                <span class="badge">+</span>
+            
                 <!-- background image -->
                 <div class="background-img">
-                    <img src="https://www.vecteezy.com/free-vector/parallax-background-space"
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnjxA4-KTk5S13Ivo74FzwET34XisVjv2aRUdGX9XfgSv1xk22"
                      alt="backgroun image">
                 </div>
 
                 <!-- profile image -->
+
                  <div class="profile-img">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/050/907/528/small/3d-rendered-cartoon-boy-wearing-a-blue-hoodie-png.png" 
                     alt="profile image">
@@ -33,8 +92,7 @@
 
             </div>
 
-            <!-- badge section -->
-             <span class="badge">+</span>
+          
 
 
             <!-- about section -->
