@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afghan Product Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <main class="dashboard" id="dashboard">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <div>
+                    <p class="brand-name"><i class="fa-solid fa-gem"></i> Afghan Product</p>
+                    <p class="brand-subtitle">Admin Panel</p>
+                </div>
+                <button class="sidebar-close" id="closeSidebar" aria-label="Close sidebar"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-user"></i><span>Users</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-box-open"></i><span>Products</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-list-check"></i><span>Categories</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-message"></i><span>Messages</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-chart-pie"></i><span>Analytics</span></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Need help? <a href="#">Contact support</a></p>
+            </div>
+        </aside>
+
+        <section class="content">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="menu-toggle" id="openSidebar" aria-label="Open sidebar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p>Manage your platform performance overview.</p>
+                    </div>
+                </div>
+
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="search" placeholder="Search dashboard"
+                            aria-label="Search dashboard">
+                    </div>
+                    <button class="icon-button" aria-label="Notifications">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <span class="badge">4</span>
+                    </button>
+                    <div class="profile-card">
+                        <img src="https://img.magnific.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Admin profile">
+                        <span>Admin</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <section class="panel hero-panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">Welcome back, Admin</p>
+                    <h2>Here’s your platform performance overview</h2>
+                    <p>Review the latest metrics, orders, and pending tasks to keep your admin workflow moving.</p>
+                </div>
+                <button class="btn btn-primary"><i class="fa-solid fa-download"></i> Export report</button>
+            </section>
+
+            <section class="summary-grid" aria-label="Quick performance overview">
+                <article class="card card-primary">
+                    <p class="card-label">Today's Orders</p>
+                    <h3>47</h3>
+                    <p class="card-meta"><span class="positive">+12%</span> from yesterday</p>
+                </article>
+                <article class="card card-secondary">
+                    <p class="card-label">New Users</p>
+                    <h3>23</h3>
+                    <p class="card-meta"><span class="positive">+8%</span> from yesterday</p>
+                </article>
+                <article class="card card-tertiary">
+                    <p class="card-label">Revenue Today</p>
+                    <h3>PKR 84K</h3>
+                    <p class="card-meta"><span class="positive">+16%</span> from yesterday</p>
+                </article>
+                <article class="card card-accent">
+                    <p class="card-label">Conversion Rate</p>
+                    <h3>3.24%</h3>
+                    <p class="card-meta"><span class="positive">+0.4%</span> from yesterday</p>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <article class="panel analytics-panel">
+                    <header class="panel-header">
+                        <div>
+                            <h2>Revenue Analytics</h2>
+                            <p>Comprehensive overview of performance metrics.</p>
+                        </div>
+                        <div class="toggle-group" role="group" aria-label="Select date range">
+                            <button class="toggle-button active" type="button">This Month</button>
+                            <button class="toggle-button" type="button">This Year</button>
+                        </div>
+                    </header>
+
+                    <div class="analytics-list">
+                        <div class="analytics-row">
+                            <span>January</span>
+                            <span>1 - 31 dates</span>
+                            <span class="value positive">+12.5%</span>
+                            <span class="amount">PKR 120K</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-fill" style="width: 60%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="analytics-list">
+                        <div class="analytics-row">
+                            <span>February</span>
+                            <span>1 - 28 dates</span>
+                            <span class="value positive">+22.3%</span>
+                            <span class="amount">PKR 220K</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-fill" style="width: 75%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="analytics-list">
+                        <div class="analytics-row">
+                            <span>March</span>
+                            <span>1 - 31 dates</span>
+                            <span class="value positive">+18.7%</span>
+                            <span class="amount">PKR 240K</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-fill" style="width: 80%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="analytics-summary">
+                        <div>
+                            <p>Total Revenue</p>
+                            <strong>PKR 640K</strong>
+                        </div>
+                        <div>
+                            <p>Growth Rate</p>
+                            <strong class="positive">+18.5%</strong>
+                        </div>
+                        <div>
+                            <p>Avg. Order</p>
+                            <strong>PKR 213K</strong>
+                        </div>
+                        <div>
+                            <p>Total Orders</p>
+                            <strong>3,022</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="panel activity-panel">
+                    <header class="panel-header">
+                        <div>
+                            <h2>Live Activity</h2>
+                            <p>Real-time updates from your platform.</p>
+                        </div>
+                        <span class="status-indicator">Live</span>
+                    </header>
+
+                    <div class="activity-item">
+                        <p><strong>Ahmad Sherif</strong> placed a new order</p>
+                        <span class="activity-meta">PKR 4,560 · 2 min ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Fatima Nazari</strong> registered as a seller</p>
+                        <span class="activity-meta">8 min ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Hamid Karimi</strong> added a new product listing</p>
+                        <span class="activity-meta">15 min ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Zain Ahmadi</strong> left a 5-star review</p>
+                        <span class="activity-meta">1 hour ago</span>
+                    </div>
+
+                    <a class="view-all" href="#">View all activities</a>
+                </aside>
+            </section>
+
+            <section class="action-grid">
+                <article class="panel actions-panel">
+                    <header class="panel-header">
+                        <h2>Quick Actions</h2>
+                        <p>Frequently used admin tasks.</p>
+                    </header>
+                    <div class="action-buttons">
+                        <button class="action-button primary"><i class="fa-solid fa-plus"></i> Add Product</button>
+                        <button class="action-button secondary"><i class="fa-solid fa-user-gear"></i> Manage Users</button>
+                        <button class="action-button tertiary"><i class="fa-solid fa-chart-simple"></i> View Reports</button>
+                        <button class="action-button accent"><i class="fa-solid fa-gear"></i> Settings</button>
+                    </div>
+                </article>
+
+                <article class="panel sellers-panel">
+                    <header class="panel-header">
+                        <h2>Top Sellers</h2>
+                        <a href="#">View all</a>
+                    </header>
+                    <div class="seller-item">
+                        <div class="seller-info">
+                            <span class="seller-chip">KH</span>
+                            <div>
+                                <strong>Kabul Handicrafts</strong>
+                                <p>1,245 orders · +24.5%</p>
+                            </div>
+                        </div>
+                        <strong>PKR 245K</strong>
+                    </div>
+                    <div class="seller-item">
+                        <div class="seller-info">
+                            <span class="seller-chip">AC</span>
+                            <div>
+                                <strong>Afghan Carpets Co.</strong>
+                                <p>876 orders · +18.2%</p>
+                            </div>
+                        </div>
+                        <strong>PKR 198K</strong>
+                    </div>
+                    <div class="seller-item">
+                        <div class="seller-info">
+                            <span class="seller-chip">HT</span>
+                            <div>
+                                <strong>Herat Textiles</strong>
+                                <p>634 orders · +15.7%</p>
+                            </div>
+                        </div>
+                        <strong>PKR 167K</strong>
+                    </div>
+                </article>
+
+                <article class="panel pending-panel">
+                    <header class="panel-header">
+                        <h2>Pending Actions</h2>
+                        <p>Items requiring immediate attention.</p>
+                    </header>
+                    <div class="pending-item">
+                        <div class="pending-info">
+                            <span class="pending-dot pending-warning"></span>
+                            <div>
+                                <strong>Seller Verifications</strong>
+                                <p>New sellers waiting for approval</p>
+                            </div>
+                        </div>
+                        <span class="pending-badge">12</span>
+                    </div>
+                    <div class="pending-item">
+                        <div class="pending-info">
+                            <span class="pending-dot pending-primary"></span>
+                            <div>
+                                <strong>Product Approvals</strong>
+                                <p>New product listings pending review</p>
+                            </div>
+                        </div>
+                        <span class="pending-badge">8</span>
+                    </div>
+                    <div class="pending-item">
+                        <div class="pending-info">
+                            <span class="pending-dot pending-danger"></span>
+                            <div>
+                                <strong>Reported Issues</strong>
+                                <p>Urgent complaints and flagged content</p>
+                            </div>
+                        </div>
+                        <span class="pending-badge">5</span>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="../script/app.js"></script>
+</body>
+
+</html>
