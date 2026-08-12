@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+      .grid-container{
+
+            width: auto;
+            height: 100vw;
+            background-color: black;
+            display: grid;
+            color: white;
+            grid-template-columns: 
+                                    [sidebar-start]1fr
+                                    [sidebar-end main-section-start]3fr
+                                    [main-section-end];
+            grid-template-rows: 
+                              [dasboard-start]1fr
+                              [dashboard-end content-section-start]3fr
+                              [content-section-end footer-start]1fr
+                              [footer-end];
+      }
+      .item{
+            /* grid-column: 1/-1; */
+            grid-column: sidebar-start / main-section-end;
+      }
+      .item2{
+            grid-column: sidebar-start / span 2;
+            
+
+      }
+     
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="grid-container">
+
+      <div class="grid-item item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic blanditiis obcaecati architecto eligendi minus ipsam placeat quas, molestias tenetur rerum labore quidem, necessitatibus omnis nulla iste accusamus voluptas pariatur dignissimos!</div>
+      <div class="grid-item item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam itaque atque voluptatum beatae tempora distinctio odit? Repellendus consectetur assumenda natus esse saepe doloremque officiis quas deserunt a rem. Fugiat, minima.</div>
+      <div class="grid-item">item3</div>
+      <div class="grid-item">item4</div>
+      <div class="grid-item">item5</div>
+      <div class="grid-item">item6</div>
+      <div class="grid-item">item7</div>
+      <!-- <div class="grid-item">item8</div>
+      <div class="grid-item">item9</div>
+      <div class="grid-item">item10</div>
+      <div class="grid-item">item11</div>
+      <div class="grid-item">item12</div>
+      <div class="grid-item">item13</div>
+      <div class="grid-item">item14</div>
+      <div class="grid-item">item15</div> -->
+    </div>
+
+</body>
+</html>
+
