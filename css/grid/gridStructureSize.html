@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* here are all the sizing algorithm  for the track with thair property - vvi */
+        /* 
+        CSS GRID TRACK SIZING
+│
+├── 1. Fixed sizing
+│      ├── px
+│      ├── other absolute lengths
+│      └── fixed track sizes
+│
+├── 2. Percentage sizing
+│      └── %
+│
+├── 3. Intrinsic sizing
+│      ├── min-content
+│      ├── max-content
+│      └── auto
+│
+├── 4. Flexible sizing
+│      └── fr
+│
+├── 5. Range / constraint sizing
+│      └── minmax()
+│
+├── 6. Automatic track sizing
+│      └── auto
+│
+├── 7. Free-space distribution
+│      └── distributing remaining space
+│
+├── 8. Minimum / maximum constraints
+│      ├── minimum track size
+│      └── maximum track size
+│
+├── 9. Content-based sizing
+│      ├── min-content contribution
+│      ├── max-content contribution
+│      └── item contributions
+│
+└── 10. Spanning-item effects
+       └── items spanning multiple tracks
+        */
+
+      .container{
+
+        width: 100%;
+        height: auto;
+        /* background-color:rgb(119, 79, 79); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 100px 100px; */
+        /* grid-template-columns: 30% 70%; */
+        grid-template-rows: 100px 100px 100px 100px;
+        gap: 10px;
+      }
+      .item{
+        width: 100%;
+        background-color: white;
+      }
+      .item1{
+        /* grid-column: 1 / span 2; */
+        grid-row: 1/ span 3;
+        background-color: rgb(46, 86, 86);
+        
+      }
+      .item2{
+        grid-row: 1/ span 3;
+        background-color: bisque;
+      }
+      .item3{
+        /* grid-column: 1/span 2; */
+        background-color: rgb(154, 123, 45) ;
+      }
+      .item4{
+        background-color: rgb(139, 28, 28);
+      }
+
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="item item1">item1 te i hei r irijei i ieriej rins nskj dk jns ntoew elts  tnlkt jnjtelk njkkndlkenr jkrnte nerjewrn</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+    <div class="item item4">item4</div>
+</div>
+</body>
+</html>
+</body>
+</html>
