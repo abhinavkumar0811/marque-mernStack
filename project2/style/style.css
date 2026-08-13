@@ -607,6 +607,10 @@ button
     {
         padding: 24px;
     }
+    .action-grid
+    {
+        display: grid;
+    }
     .summary-grid,
     .content-grid,
     .action-grid
