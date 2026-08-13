@@ -1,4 +1,4 @@
-﻿/* Base reset and globals */
+/* Base reset and globals */
 *
 {
     margin: 0;
@@ -606,6 +606,10 @@ button
     .content
     {
         padding: 24px;
+    }
+    .action-grid
+    {
+        display: grid;
     }
     .summary-grid,
     .content-grid,
