@@ -1,4 +1,4 @@
-﻿# Project2 Admin Dashboard
+# Project2 Admin Dashboard
 
 This is a responsive admin dashboard project created in the project2 folder.
 
