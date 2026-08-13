@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard layout problem</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /*  in you requite theres is not possible varification of these property  */
+        /* minmax() */
+        .container{
+            width: 1000px;
+            height: 700px;
+            /* background-color: rgb(107, 107, 83); */
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 
+            [sidebar-start]200px 
+            [sidebar-end header-start]1fr 2fr 1fr
+            [header-end];
+
+            grid-template-rows: 
+            [sidebar-start]100px 1fr 1fr 1fr 1fr
+            [sidebar-end];
+        }
+
+        .sidebar{
+            /* grid-column: sidebar-start; */
+            grid-row: sidebar-start / sidebar-end;
+            color: red;
+        }
+        .header{
+            grid-column: header-start / header-end;
+            color: green;
+        }
+        .card4{
+            grid-column: 2 / span 2;
+            color: magenta;
+        }
+        .panel{
+            grid-column: 3/span 2;
+            grid-row: 4/span 2;
+            color: greenyellow;
+        }
+        .card1{
+            color: pink;
+        }
+        .card2{
+            color: blue;
+        }
+        .card3{
+            color: gold;
+        }
+        .card4{
+            color: skyblue;
+        }
+        .card5{
+            color: paleturquoise;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+
+        <section class="sidebar">side Bar Lorem ipsum dolor sit, amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur nostrum! Quod doloribus maiores reiciendis nulla ipsa veritatis voluptates unde perspiciatis veniam est, quae accusamus ut officiis harum fugit earum. consectetur adipisicing elit. Odit facilis magni veniam sit, iste laudantium earum, sequi eveniet, dolorem veritatis accusamus! Ducimus animi incidunt laudantium ipsa facilis a ea eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi, pariatur, obcaecati, quos consequuntur ipsa exercitationem et laboriosam corrupti magni totam nostrum id quo sunt nihil deleniti necessitatibus ullam repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cupiditate, aut iusto dicta mollitia molestias ipsa, architecto perferendis, pariatur soluta fuga quasi rem necessitatibus eveniet. Repellendus ratione dolorum explicabo corporis!lorem
+
+        </section>
+        <section class="header">headner carry navbar Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint eum repudiandae veritatis nemo magni, aliquam corporis molestiae omnis, libero neque repellat pariatur ad enim quae dolores inventore explicabo velit.</section>
+
+        <artical class="card card1">Card 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita ab hic labore perspiciatis perferendis pariatur assumenda magnam eveniet maiores. Modi facere voluptas, dolor beatae eum rem unde. Reprehenderit, id?</artical>
+        <artical class="card card2">Card 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit corrupti, saepe quidem officia tempora itaque repellat velit ducimus aut ratione dignissimos voluptatibus in, consequuntur doloremque, inventore numquam ex voluptatum mollitia.</artical>
+        <artical class="card card3">Card 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident! Eius non minima ad officiis aspernatur corrupti, dolorem laboriosam voluptatum nam hic, natus cupiditate saepe provident culpa. Doloremque, sint aspernatur.</artical>
+        <artical class="card card4">Card 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsum eveniet excepturi adipisci voluptas ipsa ducimus tenetur quae, modi explicabo ab neque expedita commodi repudiandae, magnam fugiat provident recusandae reprehenderit!</artical>
+        <artical class="card card5">Card 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, sint eius doloribus sed necessitatibus impedit commodi cum quaerat nostrum enim nihil sapiente consequatur, vero pariatur cumque fugiat totam sit dolorum.</artical>
+
+        <article class="panel panel">panel 1 Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, nihil. Delectus, esse. Assumenda soluta voluptatum beatae, ipsum voluptates recusandae, enim modi asperiores officia ea deleniti provident? Omnis soluta consequatur culpa. dolor sit amet consectetur adipisicing elit. Iure suscipit aliquam iste! Ipsam, dicta ut vitae eos dolore ullam praesentium aperiam? Consequatur, aperiam commodi. Odit debitis enim iusto nobis maiores. Lorlem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis iste, ipsum incidunt officia ratione fuga repellat a! Vitae nostrum non a sapiente, sequi labore esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci nisi obcaecati aliquid animi inventore voluptas earum est quisquam veritatis non quo sit amet eligendi neque, optio consectetur itaque aut error!llorem porro aut dolorum delectus!</article>
+        <!-- <article class="panel panel2">panel 2</article>
+        <article class="panel panel3">panel 3</article>
+        <article class="panel panel4">panel 4</article> -->
+
+    </main>
+
+    
+</body>
+</html>
