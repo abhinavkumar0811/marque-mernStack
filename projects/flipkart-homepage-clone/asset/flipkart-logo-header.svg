@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Flipkart logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7c400"/>
+      <stop offset="100%" stop-color="#ff9f00"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="80" rx="12" fill="#ffffff"/>
+  <g transform="translate(16 12)">
+    <circle cx="24" cy="24" r="20" fill="#f3f8ff"/>
+    <path d="M14 26l12-18 12 18M18 18h12M25 14v18" stroke="#2874f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M11 30h28" stroke="#2874f0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="88" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#2874f0">Flipkart</text>
+  <text x="90" y="57" font-family="Arial, sans-serif" font-size="12" fill="#ff9f00">Explore</text>
+  <text x="152" y="57" font-family="Arial, sans-serif" font-size="12" fill="#2874f0">Plus</text>
+  <circle cx="188" cy="52" r="3" fill="url(#g)"/>
+</svg>
