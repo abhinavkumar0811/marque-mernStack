@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2f2f2;
+    }
+
+    .card {
+      width: 350px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card .top {
+      background: #4070f4;
+      height: 120px;
+      position: relative;
+    }
+
+    .card .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card .info {
+      text-align: center;
+      padding: 70px 20px 20px;
+    }
+
+    .card .info h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .card .info p {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      background: #4070f4;
+      margin: 0 5px;
+      padding: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #3050c4;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      background: #4070f4;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #3050c4;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      color: #555;
+    }
+
+    .stats div {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .stats i {
+      margin-right: 5px;
+      color: #4070f4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    </div>
+    <div class="info">
+      <h2>CodingLab</h2>
+      <p>YouTuber & Blogger</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="buttons">
+        <button>Subscribe</button>
+        <button>Message</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div><i class="far fa-heart"></i> 60.4k</div>
+      <div><i class="far fa-comment"></i> 20k</div>
+      <div><i class="far fa-eye"></i> 12.4k</div>
+    </div>
+  </div>
+</body>
+</html>
