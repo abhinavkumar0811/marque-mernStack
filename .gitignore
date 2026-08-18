@@ -1,0 +1,11 @@
+/gitClone/
+
+# Common dependency directories
+**/node_modules/
+
+# Nested repository in this workspace; keep it out of the parent repo
+javascript/youtubeBackend/
+
+# Problematic OneDrive placeholder file that breaks git add on Windows
+javascript/a - Copy.exe
+javascript/*.exe

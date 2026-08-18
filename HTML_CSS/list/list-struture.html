@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List Structure Practice</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			background: #f8fafc;
+			color: #1e293b;
+			line-height: 1.6;
+			padding: 1.2rem;
+		}
+
+		.container {
+			max-width: 850px;
+			margin: 0 auto;
+			background: #ffffff;
+			border: 1px solid #dbe3ee;
+			border-radius: 12px;
+			padding: 1.2rem;
+		}
+
+		h1 {
+			margin-bottom: 0.5rem;
+			font-size: 1.8rem;
+		}
+
+		.intro {
+			color: #475569;
+			margin-bottom: 1rem;
+		}
+
+		.list-block {
+			border: 1px solid #e2e8f0;
+			border-radius: 10px;
+			padding: 0.9rem;
+			margin-bottom: 0.9rem;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+			margin-bottom: 0.45rem;
+		}
+
+		ul,
+		ol,
+		dl {
+			margin-left: 1.4rem;
+		}
+
+		li + li {
+			margin-top: 0.25rem;
+		}
+
+		dt {
+			font-weight: 700;
+			margin-top: 0.45rem;
+		}
+
+		dd {
+			margin-left: 1rem;
+			color: #475569;
+		}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<h1>HTML List Structure</h1>
+		<p class="intro">This page shows simple list examples: unordered, ordered, nested, and description lists.</p>
+
+		<section class="list-block">
+			<h2>Unordered List</h2>
+			<ul>
+				<li>HTML basics</li>
+				<li>CSS styling</li>
+				<li>JavaScript practice</li>
+			</ul>
+		</section>
+
+		<section class="list-block">
+			<h2>Ordered List</h2>
+			<ol>
+				<li>Create the structure</li>
+				<li>Add content</li>
+				<li>Apply styling</li>
+			</ol>
+		</section>
+
+		<section class="list-block">
+			<h2>Nested List</h2>
+			<ul>
+				<li>Frontend
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</li>
+				<li>Backend
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="list-block">
+			<h2>Description List</h2>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Defines the structure of a web page.</dd>
+				<dt>CSS</dt>
+				<dd>Controls the design and layout of a web page.</dd>
+				<dt>JavaScript</dt>
+				<dd>Adds interactivity and dynamic behavior.</dd>
+			</dl>
+		</section>
+	</main>
+</body>
+</html>
